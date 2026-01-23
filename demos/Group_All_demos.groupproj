@@ -3,9 +3,6 @@
         <ProjectGuid>{9D43EAB8-A364-4E4F-AD5D-2D5788EF0C46}</ProjectGuid>
     </PropertyGroup>
     <ItemGroup>
-        <Projects Include="..\package\GLibWMI.dproj">
-            <Dependencies/>
-        </Projects>
         <Projects Include="BIOSdemo\TestBiosInfo.dproj">
             <Dependencies/>
         </Projects>
@@ -41,15 +38,6 @@
             <Default.Personality/>
         </BorlandProject>
     </ProjectExtensions>
-    <Target Name="GLibWMI">
-        <MSBuild Projects="..\package\GLibWMI.dproj"/>
-    </Target>
-    <Target Name="GLibWMI:Clean">
-        <MSBuild Projects="..\package\GLibWMI.dproj" Targets="Clean"/>
-    </Target>
-    <Target Name="GLibWMI:Make">
-        <MSBuild Projects="..\package\GLibWMI.dproj" Targets="Make"/>
-    </Target>
     <Target Name="TestBiosInfo">
         <MSBuild Projects="BIOSdemo\TestBiosInfo.dproj"/>
     </Target>
@@ -132,13 +120,13 @@
         <MSBuild Projects="Info version Windows\OSInfo.dproj" Targets="Make"/>
     </Target>
     <Target Name="Build">
-        <CallTarget Targets="GLibWMI;TestBiosInfo;DiskDriveInfo;ProcessorInfo;VProcess;ServiceControl;PGenericTest;PPrinterList;SysInfo;OSInfo"/>
+        <CallTarget Targets="TestBiosInfo;DiskDriveInfo;ProcessorInfo;VProcess;ServiceControl;PGenericTest;PPrinterList;SysInfo;OSInfo"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="GLibWMI:Clean;TestBiosInfo:Clean;DiskDriveInfo:Clean;ProcessorInfo:Clean;VProcess:Clean;ServiceControl:Clean;PGenericTest:Clean;PPrinterList:Clean;SysInfo:Clean;OSInfo:Clean"/>
+        <CallTarget Targets="TestBiosInfo:Clean;DiskDriveInfo:Clean;ProcessorInfo:Clean;VProcess:Clean;ServiceControl:Clean;PGenericTest:Clean;PPrinterList:Clean;SysInfo:Clean;OSInfo:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="GLibWMI:Make;TestBiosInfo:Make;DiskDriveInfo:Make;ProcessorInfo:Make;VProcess:Make;ServiceControl:Make;PGenericTest:Make;PPrinterList:Make;SysInfo:Make;OSInfo:Make"/>
+        <CallTarget Targets="TestBiosInfo:Make;DiskDriveInfo:Make;ProcessorInfo:Make;VProcess:Make;ServiceControl:Make;PGenericTest:Make;PPrinterList:Make;SysInfo:Make;OSInfo:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>

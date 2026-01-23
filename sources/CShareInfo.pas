@@ -1,5 +1,5 @@
 {
-TShareInfo Component Version 3.2 - Suite GLibWMI
+TShareInfo Component Version 3.3 - Suite GLibWMI
 Copyright (©) 2024,  by Germán Estévez (Neftalí)
 
 La clase Win32_Share representa un recurso compartido en un sistema Win32. Puede tratarse de una unidad 

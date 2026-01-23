@@ -1,5 +1,5 @@
 {
-TDisplayConfigurationInfo Component Version 3.2 - Suite GLibWMI
+TDisplayConfigurationInfo Component Version 3.3 - Suite GLibWMI
 Copyright (©) 2024,  by Germán Estévez (Neftalí)
 
 La clase Win32_DisplayConfiguration representa la información de configuración del dispositivo de pantalla 

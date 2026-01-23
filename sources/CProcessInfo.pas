@@ -1,5 +1,5 @@
 {
-TProcessInfo Component Version 3.2 - Suite GLibWMI
+TProcessInfo Component Version 3.3 - Suite GLibWMI
 Copyright (©) 2024,  by Germán Estévez (Neftalí)
 
 La clase Win32_Process representa una secuencia de eventos en un sistema Win32. Cualquier secuencia compuesta 

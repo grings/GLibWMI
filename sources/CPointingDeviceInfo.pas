@@ -1,5 +1,5 @@
 {
-TPointingDeviceInfo Component Version 3.2 - Suite GLibWMI
+TPointingDeviceInfo Component Version 3.3 - Suite GLibWMI
 Copyright (©) 2024,  by Germán Estévez (Neftalí)
 
 La clase Win32_PointingDevice representa un dispositivo de entrada usado para señalar y seleccionar zonas 

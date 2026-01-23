@@ -37,7 +37,7 @@ const
 
 // version de los componentes
 const
-  GLIBWMI_VERSION = '3.2';
+  GLIBWMI_VERSION = '3.3';
   GLIBSI_LBL = 'Libería GLibWMI    [%s]';
 
 

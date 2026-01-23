@@ -8,8 +8,9 @@
         <TargetedPlatforms>1</TargetedPlatforms>
         <AppType>Application</AppType>
         <FrameworkType>VCL</FrameworkType>
-        <ProjectVersion>20.1</ProjectVersion>
+        <ProjectVersion>20.3</ProjectVersion>
         <Platform Condition="'$(Platform)'==''">Win32</Platform>
+        <ProjectName Condition="'$(ProjectName)'==''">VProcess</ProjectName>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
         <Base>true</Base>
@@ -47,7 +48,7 @@
         <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
         <DCC_Namespace>Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;System;Xml;Data;Datasnap;Web;Soap;Winapi;System.Win;$(DCC_Namespace)</DCC_Namespace>
         <DCC_DependencyCheckOutputName>VProcess.exe</DCC_DependencyCheckOutputName>
-        <DCC_UnitSearchPath>$(DELPHI)\Lib\Debug;c:\Proyectos\Delphi6\Ejemplos GERMAN\__GLibWMI__\Sources\;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+        <DCC_UnitSearchPath>$(DELPHI)\Lib\Debug;.\..\..\sources;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
         <DCC_MapFile>3</DCC_MapFile>
         <DCC_ImageBase>00400000</DCC_ImageBase>
         <DCC_Platform>x86</DCC_Platform>
@@ -92,8 +93,7 @@
         <BT_BuildType>Debug</BT_BuildType>
         <DCC_ExeOutput>.\</DCC_ExeOutput>
         <DCC_DcuOutput>.\lib</DCC_DcuOutput>
-        <DCC_UnitSearchPath>.\..\..\sources;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
-        <AppDPIAwarenessMode>none</AppDPIAwarenessMode>
+        <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
     </PropertyGroup>
     <ItemGroup>
         <DelphiCompile Include="$(MainSource)">
@@ -161,38 +161,110 @@
                     <VersionInfoKeys Name="Comments"/>
                 </VersionInfoKeys>
                 <Excluded_Packages>
-                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k290.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
-                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp290.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
-                    <Excluded_Packages Name="C:\ProyectosDelphi\GLibWMI_3.0_svn\DCUs\GLibWMI.bpl">File C:\ProyectosDelphi\GLibWMI_3.0_svn\DCUs\GLibWMI.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxCoreRS26.bpl">ExpressCore Library by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dclcxLibraryRS26.bpl">Express Cross Platform Library by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dclcxEditorFieldLinkRS26.bpl">ExpressEditors FieldLink by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxServerModeRS26.bpl">ExpressDataController Server Mode by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxCloudServiceLibraryRS26.bpl">ExpressCloudService Library by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxDBXServerModeRS26.bpl">dbExpress Data Source for ExpressDataController Server Mode by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxFireDACServerModeRS26.bpl">FireDAC Data Source for ExpressDataController Server Mode by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxHttpIndyRequestRS26.bpl">Express Cross Platform Library Indy Request Handler by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxIconLibraryRS26.bpl">Express Cross Platform Library Icon Library by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxADOServerModeRS26.bpl">ADO Data Source for ExpressDataController Server Mode by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxDockingRS26.bpl">ExpressDocking Library by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxBarRS26.bpl">ExpressBars by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxBarExtDBItemsRS26.bpl">ExpressBars extended DB items by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxBarExtItemsRS26.bpl">ExpressBars extended items by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxBarDBNavRS26.bpl">ExpressBars DBNavigator by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxRibbonRS26.bpl">ExpressBars Ribbon controls by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxTabbedMDIRS26.bpl">ExpressBars Tabbed MDI by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxTileControlRS26.bpl">ExpressTileControl by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxWizardControlRS26.bpl">ExpressWizardControl by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxSpreadSheetRS26.bpl">ExpressSpreadSheet by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxSpreadSheetReportDesignerRS26.bpl">ExpressSpreadSheet Report Designer by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dclcxTreeListRS26.bpl">ExpressQuantumTreeList by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dclcxVerticalGridRS26.bpl">ExpressVerticalGrid by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxmdsRS26.bpl">ExpressMemData by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxSpellCheckerRS26.bpl">ExpressSpellChecker by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxNavBarRS26.bpl">ExpressNavBar by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxSkinsCoreRS26.bpl">ExpressSkins Library by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxSkinsDesignHelperRS26.bpl">ExpressSkins Library Uses Clause Auto Fill Helper by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxPSCoreRS26.bpl">ExpressPrinting System by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxPScxCommonRS26.bpl">ExpressPrinting System Cross Platform Library by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxPScxExtCommonRS26.bpl">ExpressPrinting System Extended Cross Platform Library by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxPSTeeChartRS26.bpl">ExpressPrinting System ReportLink for TeeChart by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxPSdxLCLnkRS26.bpl">ExpressPrinting System ReportLink for ExpressLayoutControl by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxPSLnksRS26.bpl">ExpressPrinting System ReportLinks (Standard) by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxPSDBTeeChartRS26.bpl">ExpressPrinting System ReportLink for DBTeeChart by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dxPScxPCProdRS26.bpl">ExpressPrinting System ContainerProducer for ExpressPageControl by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dclcxPivotGridRS26.bpl">ExpressPivotGrid by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dclcxPivotGridOLAPRS26.bpl">ExpressPivotGrid OLAP by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxdbtrRS26.bpl">ExpressDBTree by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxtrmdRS26.bpl">ExpressTreePrintedDataSet by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxOrgCRS26.bpl">ExpressOrgChart by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxOrgChartAdvancedCustomizeFormRS26.bpl">ExpressOrgChart Advanced Customization Form by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxDBOrRS26.bpl">ExpressDBOrgChart by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxFlowChartRS26.bpl">ExpressFlowChart by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxMapControlRS26.bpl">ExpressMapControl by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dclcxGridRS26.bpl">ExpressQuantumGrid by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dclcxSchedulerRS26.bpl">ExpressScheduler by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dclcxSchedulerWebServiceStorageRS26.bpl">ExpressScheduler Web Service Storage by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxRichEditControlRS26.bpl">ExpressRichEdit Control by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dxRichEditDocumentModelRS26.bpl">ExpressRichEdit Control Document Model by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dxRichEditCoreRS26.bpl">ExpressRichEdit Control Core Library by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxGaugeControlRS26.bpl">ExpressGaugeControl by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxPDFViewerRS26.bpl">ExpressPDFViewer by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxEMFRS26.bpl">ExpressEntityMapping Framework by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxADOEMFRS26.bpl">ExpressEntityMapping Framework ADO Data Provider by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxFireDACEMFRS26.bpl">ExpressEntityMapping Framework FireDAC Data Provider by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dclcxPageControldxBarPopupMenuRS26.bpl">ExpressPageControl dxBar Popup Menu by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxRibbonCustomizationFormRS26.bpl">ExpressBars Ribbon Customization Form by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxSpreadSheetCoreConditionalFormattingDialogsRS26.bpl">ExpressSpreadSheetCore Conditional Formatting Dialogs by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxSpreadSheetConditionalFormattingDialogsRS26.bpl">ExpressSpreadSheet Conditional Formatting Dialogs by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dclcxTreeListdxBarPopupMenuRS26.bpl">ExpressQuantumTreeList dxBar Built-In Menu by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxSkinsFluentDesignFormWizardRS26.bpl">ExpressSkins Fluent Design Form Wizard by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxPScxPivotGridLnkRS26.bpl">ExpressPrinting System ReportLink for ExpressPivotGrid by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxPScxSchedulerLnkRS26.bpl">ExpressPrinting System ReportLink for ExpressScheduler by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxPScxTLLnkRS26.bpl">ExpressPrinting System ReportLink for ExpressQuantumTreeList by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxPScxVGridLnkRS26.bpl">ExpressPrinting System ReportLink for ExpressVerticalGrid by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxPSdxDBOCLnkRS26.bpl">ExpressPrinting System ReportLinks for ExpressDBOrgChart by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxPSdxDBTVLnkRS26.bpl">ExpressPrinting System ReportLink for ExpressDBTree by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxPSdxFCLnkRS26.bpl">ExpressPrinting System ReportLinks for ExpressFlowChart by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxPSdxGaugeControlLnkRS26.bpl">ExpressPrinting System ReportLink for ExpressGauge Control by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxPScxGridLnkRS26.bpl">ExpressPrinting System ReportLink for ExpressQuantumGrid by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxPSdxMapControlLnkRS26.bpl">ExpressPrinting System ReportLink for ExpressMap Control by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxPSdxOCLnkRS26.bpl">ExpressPrinting System ReportLinks for ExpressOrgChart by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxPSdxPDFViewerLnkRS26.bpl">ExpressPrinting System ReportLink for ExpressPDFViewer by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxPSdxSpreadSheetLnkRS26.bpl">ExpressPrinting System ReportLink for ExpressSpreadSheet by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxPSPrVwAdvRS26.bpl">ExpressPrinting System Advanced Preview Window by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxPSPrVwRibbonRS26.bpl">ExpressPrinting System Ribbon Preview Window by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxPSRichEditControlLnkRS26.bpl">ExpressPrinting System ReportLink for ExpressRichEditControl by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dclcxPivotGridChartRS26.bpl">ExpressPivotGrid connection to ExpressQuantumGrid Chart View by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxFlowChartAdvancedCustomizeFormRS26.bpl">ExpressFlowChart Advanced Customization Form by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dcldxFlowChartDesignerRS26.bpl">ExpressFlowChart Designer by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dclcxGridEMFRS26.bpl">ExpressEntityMapping Framework Extension for ExpressQuantumGrid by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dclcxGridWizardRS26.bpl">ExpressQuantumGrid Wizard by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dclcxGridWizardEMFExtensionRS26.bpl">ExpressEntityMapping Framework Extension for ExpressQuantumGrid Wizard by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dclcxSchedulerRibbonStyleEventEditorRS26.bpl">ExpressScheduler Ribbon Event Window by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dclcxSchedulerGridRS26.bpl">ExpressScheduler connection to ExpressQuantumGrid by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\DevExpress\20.1.3\Library\RS26\dclcxSchedulerTreeBrowserRS26.bpl">ExpressScheduler tree browser by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\LOCAL\Componentes\eDocEngineVCL\5.0.0.505\Lib\RAD10.3\Win32\ExpIntf\DCLgtXPressExpD26.bpl">Gnostice DevExpress Interface</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k260.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp260.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
                 </Excluded_Packages>
             </Delphi.Personality>
             <Platforms>
                 <Platform value="Win32">True</Platform>
                 <Platform value="Win64">False</Platform>
             </Platforms>
-            <Deployment Version="4">
-                <DeployFile LocalName="VProcess.exe" Configuration="Debug" Class="ProjectOutput">
-                    <Platform Name="Win32">
-                        <RemoteName>VProcess.exe</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
+            <Deployment Version="5">
+                <DeployFile LocalName="VProcess.exe" Configuration="Debug" Class="ProjectOutput"/>
                 <DeployClass Name="AdditionalDebugSymbols">
                     <Platform Name="OSX32">
                         <Operation>1</Operation>
                     </Platform>
                     <Platform Name="Win32">
                         <Operation>0</Operation>
-                    </Platform>
-                </DeployClass>
-                <DeployClass Name="AndroidClasses">
-                    <Platform Name="Android">
-                        <RemoteDir>classes</RemoteDir>
-                        <Operation>64</Operation>
-                    </Platform>
-                    <Platform Name="Android64">
-                        <RemoteDir>classes</RemoteDir>
-                        <Operation>64</Operation>
                     </Platform>
                 </DeployClass>
                 <DeployClass Name="AndroidFileProvider">
@@ -294,6 +366,16 @@
                     </Platform>
                     <Platform Name="Android64">
                         <RemoteDir>res\values-v31</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidSplashStylesV35">
+                    <Platform Name="Android">
+                        <RemoteDir>res\values-v35</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\values-v35</RemoteDir>
                         <Operation>1</Operation>
                     </Platform>
                 </DeployClass>
@@ -764,6 +846,9 @@
                     <Platform Name="Win64">
                         <Operation>1</Operation>
                     </Platform>
+                    <Platform Name="Win64x">
+                        <Operation>1</Operation>
+                    </Platform>
                 </DeployClass>
                 <DeployClass Name="ProjectiOSDeviceDebug">
                     <Platform Name="iOSDevice32">
@@ -1018,12 +1103,14 @@
                 <ProjectRoot Platform="iOSDevice32" Name="$(PROJECTNAME).app"/>
                 <ProjectRoot Platform="iOSDevice64" Name="$(PROJECTNAME).app"/>
                 <ProjectRoot Platform="iOSSimARM64" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="iOSSimulator" Name="$(PROJECTNAME).app"/>
                 <ProjectRoot Platform="Linux64" Name="$(PROJECTNAME)"/>
                 <ProjectRoot Platform="OSX32" Name="$(PROJECTNAME)"/>
                 <ProjectRoot Platform="OSX64" Name="$(PROJECTNAME)"/>
                 <ProjectRoot Platform="OSXARM64" Name="$(PROJECTNAME)"/>
                 <ProjectRoot Platform="Win32" Name="$(PROJECTNAME)"/>
                 <ProjectRoot Platform="Win64" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="Win64x" Name="$(PROJECTNAME)"/>
             </Deployment>
         </BorlandProject>
         <ProjectFileVersion>12</ProjectFileVersion>

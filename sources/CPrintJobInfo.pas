@@ -1,5 +1,5 @@
 {
-TPrintJobInfo Component Version 3.2 - Suite GLibWMI
+TPrintJobInfo Component Version 3.3 - Suite GLibWMI
 Copyright (©) 2024,  by Germán Estévez (Neftalí)
 
 CIM_Job es un elemento lógico que representa una unidad de trabajo para un sistema, tal como un trabajo 

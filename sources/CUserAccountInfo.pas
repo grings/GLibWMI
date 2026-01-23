@@ -1,5 +1,5 @@
 {
-TUserAccountInfo Component Version 3.2 - Suite GLibWMI
+TUserAccountInfo Component Version 3.3 - Suite GLibWMI
 Copyright (©) 2024,  by Germán Estévez (Neftalí)
 
 La clase Win32_UserAccount contiene información acerca de una cuenta de usuario de un sistema Win32.

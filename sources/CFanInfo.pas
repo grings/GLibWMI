@@ -1,5 +1,5 @@
 {
-TFanInfo Component Version 3.2 - Suite GLibWMI
+TFanInfo Component Version 3.3 - Suite GLibWMI
 Copyright (©) 2024,  by Germán Estévez (Neftalí)
 
 La clase Win32_Fan representa las propiedades de un ventilador del equipo. Por ejemplo, el ventilador 

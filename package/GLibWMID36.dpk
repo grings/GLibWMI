@@ -1,4 +1,4 @@
-package GLibWMI;
+package GLibWMID36;
 
 
 {$R *.res}

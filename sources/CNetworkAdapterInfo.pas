@@ -1,5 +1,5 @@
 {
-TNetworkAdapterInfo Component Version 3.2 - Suite GLibWMI
+TNetworkAdapterInfo Component Version 3.3 - Suite GLibWMI
 Copyright (©) 2024,  by Germán Estévez (Neftalí)
 
 La clase Win32_NetworkAdapter representa un adaptador de red en un sistema Win32.

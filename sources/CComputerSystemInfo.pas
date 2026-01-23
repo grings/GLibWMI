@@ -1,5 +1,5 @@
 {
-TComputerSystemInfo Component Version 3.2 - Suite GLibWMI
+TComputerSystemInfo Component Version 3.3 - Suite GLibWMI
 Copyright (©) 2024,  by Germán Estévez (Neftalí)
 
 La clase Win32_ComputerSystem representa el sistema operativo de un equipo en un entorno Win32.

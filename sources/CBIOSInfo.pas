@@ -1,5 +1,5 @@
 {
-TBIOSInfo Component Version 3.2 - Suite GLibWMI
+TBIOSInfo Component Version 3.3 - Suite GLibWMI
 Copyright (©) 2024,  by Germán Estévez (Neftalí)
 
 La clase Win32_BIOS representa los atributos del servicio de entrada y salida básico del sistema (BIOS, 

@@ -1,15 +1,16 @@
 ﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <PropertyGroup>
-        <ProjectGuid>{1D4A8B30-0FC1-4F36-B628-F40F5CD0DC88}</ProjectGuid>
-        <MainSource>TestBiosInfo.dpr</MainSource>
-        <Base>True</Base>
+        <ProjectGuid>{1ABE80AC-FEC6-42D6-B6E9-4892D820846B}</ProjectGuid>
+        <MainSource>GLibWMID36.dpk</MainSource>
         <Config Condition="'$(Config)'==''">Debug</Config>
-        <TargetedPlatforms>1</TargetedPlatforms>
-        <AppType>Application</AppType>
-        <FrameworkType>VCL</FrameworkType>
+        <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
         <ProjectVersion>20.3</ProjectVersion>
+        <Base>True</Base>
+        <TargetedPlatforms>1</TargetedPlatforms>
+        <AppType>Package</AppType>
+        <FrameworkType>VCL</FrameworkType>
         <Platform Condition="'$(Platform)'==''">Win32</Platform>
-        <ProjectName Condition="'$(ProjectName)'==''">TestBiosInfo</ProjectName>
+        <ProjectName Condition="'$(ProjectName)'==''">GLibWMID36</ProjectName>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
         <Base>true</Base>
@@ -21,6 +22,11 @@
     </PropertyGroup>
     <PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Base)'=='true') or '$(Base_Win64)'!=''">
         <Base_Win64>true</Base_Win64>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win64x' and '$(Base)'=='true') or '$(Base_Win64x)'!=''">
+        <Base_Win64x>true</Base_Win64x>
         <CfgParent>Base</CfgParent>
         <Base>true</Base>
     </PropertyGroup>
@@ -47,72 +53,211 @@
         <Base>true</Base>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base)'!=''">
-        <DCC_E>false</DCC_E>
-        <DCC_F>false</DCC_F>
-        <DCC_K>false</DCC_K>
-        <DCC_N>false</DCC_N>
-        <DCC_S>false</DCC_S>
-        <DCC_ImageBase>00400000</DCC_ImageBase>
-        <SanitizedProjectName>TestBiosInfo</SanitizedProjectName>
-        <DCC_Namespace>Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;System;Xml;Data;Datasnap;Web;Soap;Winapi;$(DCC_Namespace)</DCC_Namespace>
+        <VerInfo_Keys>CompanyName=Neftalí -Germán Estévez-;FileDescription=GLib para Windows Management Instrumentation;FileVersion=1.3.0.20;InternalName=GLibWMI;LegalCopyright=Neftalí -Germán Estévez-;LegalTrademarks=Neftalí -Germán Estévez-;OriginalFilename=GLib para Windows Management Instrumentation;ProductName=GLib para Windows Management Instrumentation;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
         <VerInfo_Locale>3082</VerInfo_Locale>
-        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=;CFBundleName=</VerInfo_Keys>
+        <VerInfo_PreRelease>true</VerInfo_PreRelease>
+        <VerInfo_Build>20</VerInfo_Build>
+        <VerInfo_Debug>true</VerInfo_Debug>
+        <SanitizedProjectName>GLibWMID36</SanitizedProjectName>
+        <DCC_Namespace>Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;System;Xml;Data;Datasnap;Web;Soap;Winapi;System.Win;$(DCC_Namespace)</DCC_Namespace>
+        <VerInfo_MinorVer>3</VerInfo_MinorVer>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
+        <DCC_DependencyCheckOutputName>..\..\__GLibWMI__\DCUs\GLibWMI.bpl</DCC_DependencyCheckOutputName>
+        <DCC_Optimize>false</DCC_Optimize>
+        <DCC_UnitSearchPath>.\..\Sources;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+        <GenPackage>true</GenPackage>
+        <GenDll>true</GenDll>
+        <DCC_FullBooleanEvaluations>true</DCC_FullBooleanEvaluations>
+        <DCC_BplOutput>.\..\DCUs</DCC_BplOutput>
+        <DCC_ImageBase>00400000</DCC_ImageBase>
+        <DCC_Description>GLibWMI para Windows Management Instrumentation</DCC_Description>
+        <DCC_OutputNeverBuildDcps>true</DCC_OutputNeverBuildDcps>
+        <DCC_DcpOutput>.\..\DCUs</DCC_DcpOutput>
+        <DCC_SymbolReferenceInfo>1</DCC_SymbolReferenceInfo>
+        <DCC_DcuOutput>.\..\DCUs</DCC_DcuOutput>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Win32)'!=''">
-        <DCC_Namespace>System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
-        <BT_BuildType>Debug</BT_BuildType>
-        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
-        <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName)</VerInfo_Keys>
+        <DCC_DcuOutput>.\..\DCUs</DCC_DcuOutput>
+        <VerInfo_Build>0</VerInfo_Build>
+        <DCC_BplOutput>.\..\DCUs</DCC_BplOutput>
+        <DCC_DcpOutput>.\..\DCUs</DCC_DcpOutput>
+        <DCC_UsePackage>rtl;vcl;$(DCC_UsePackage)</DCC_UsePackage>
+        <DCC_Namespace>Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
+        <VerInfo_MinorVer>0</VerInfo_MinorVer>
         <VerInfo_Locale>1033</VerInfo_Locale>
-        <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
-        <Icon_MainIcon>TestBiosInfo_Icon1.ico</Icon_MainIcon>
-        <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
-        <UWP_DelphiLogo44>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_44.png</UWP_DelphiLogo44>
-        <UWP_DelphiLogo150>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_150.png</UWP_DelphiLogo150>
+        <VerInfo_Keys>CompanyName=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductVersion=1.0.0.0;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName);FileDescription=$(MSBuildProjectName);ProductName=$(MSBuildProjectName)</VerInfo_Keys>
+        <Icon_MainIcon>GLibWMI.ico</Icon_MainIcon>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Win64)'!=''">
-        <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
-        <Icon_MainIcon>TestBiosInfo_Icon1.ico</Icon_MainIcon>
-        <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
-        <UWP_DelphiLogo44>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_44.png</UWP_DelphiLogo44>
-        <UWP_DelphiLogo150>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_150.png</UWP_DelphiLogo150>
+        <DCC_UsePackage>rtl;vcl;$(DCC_UsePackage)</DCC_UsePackage>
+        <Icon_MainIcon>GLibWMI.ico</Icon_MainIcon>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win64x)'!=''">
+        <DCC_Namespace>Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;$(DCC_Namespace)</DCC_Namespace>
+        <BT_BuildType>Debug</BT_BuildType>
+        <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <BCC_EnableBatchCompilation>true</BCC_EnableBatchCompilation>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1)'!=''">
+        <DCC_DebugDCUs>true</DCC_DebugDCUs>
+        <DCC_SymbolReferenceInfo>2</DCC_SymbolReferenceInfo>
+        <DCC_WriteableConstants>True</DCC_WriteableConstants>
         <DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
-        <DCC_DebugInformation>0</DCC_DebugInformation>
-        <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
-        <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
-        <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
-        <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
+        <VerInfo_Build>0</VerInfo_Build>
+        <DCC_DcpOutput>.\..\DCUs</DCC_DcpOutput>
+        <VerInfo_Keys>CompanyName=Copyright © Germán Estévez (Neftalí);FileVersion=3.0.0.0;InternalName=GLibWMI;LegalCopyright=Copyright © Germán Estévez (Neftalí);LegalTrademarks=Copyright © Germán Estévez (Neftalí);OriginalFilename=GlibWMI;ProductVersion=3.0.0.0;Comments=;ProgramID=$(MSBuildProjectName);FileDescription=$(MSBuildProjectName);ProductName=$(MSBuildProjectName)</VerInfo_Keys>
+        <VerInfo_MinorVer>0</VerInfo_MinorVer>
+        <VerInfo_MajorVer>3</VerInfo_MajorVer>
+        <VerInfo_Debug>false</VerInfo_Debug>
+        <VerInfo_PreRelease>false</VerInfo_PreRelease>
+        <VerInfo_AutoGenVersion>true</VerInfo_AutoGenVersion>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
-        <DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
-        <DCC_Optimize>false</DCC_Optimize>
-        <DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
+        <VerInfo_MinorVer>1</VerInfo_MinorVer>
+        <VerInfo_MajorVer>2</VerInfo_MajorVer>
+        <VerInfo_Keys>CompanyName=Neftalí -Germán Estévez-;FileDescription=GLib para Windows Management Instrumentation;FileVersion=2.1.0.0;InternalName=GLibWMI;LegalCopyright=Neftalí -Germán Estévez-;LegalTrademarks=Neftalí -Germán Estévez-;OriginalFilename=GLib para Windows Management Instrumentation;ProductName=GLib para Windows Management Instrumentation;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+        <VerInfo_Build>0</VerInfo_Build>
+        <DCC_SymbolReferenceInfo>2</DCC_SymbolReferenceInfo>
+        <DCC_DebugDCUs>true</DCC_DebugDCUs>
+        <DCC_WriteableConstants>True</DCC_WriteableConstants>
+        <DCC_DcuOutput>.\..\dcus\</DCC_DcuOutput>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
-        <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
-        <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
-        <DCC_ExeOutput>.\</DCC_ExeOutput>
-        <DCC_UnitSearchPath>.\..\..\sources;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
-        <DCC_DcuOutput>.\lib</DCC_DcuOutput>
-        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <DCC_DcuOutput>.\..\dcus\</DCC_DcuOutput>
+        <DCC_BplOutput>.\..\DCUs</DCC_BplOutput>
+        <DCC_DcpOutput>.\..\DCUs</DCC_DcpOutput>
+        <VerInfo_Build>0</VerInfo_Build>
+        <VerInfo_MinorVer>0</VerInfo_MinorVer>
         <VerInfo_Locale>1033</VerInfo_Locale>
-        <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName)</VerInfo_Keys>
+        <VerInfo_Keys>CompanyName=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductVersion=1.0.0.0;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName);FileDescription=$(MSBuildProjectName);ProductName=$(MSBuildProjectName)</VerInfo_Keys>
     </PropertyGroup>
     <ItemGroup>
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="UMainDemoBIOS.pas">
-            <Form>FormMainBios</Form>
-        </DCCReference>
-        <DCCReference Include="..\..\sources\FormAbout.pas">
+        <DCCReference Include="GLibWMIRes.res"/>
+        <DCCReference Include="designide.dcp"/>
+        <DCCReference Include="vcl.dcp"/>
+        <DCCReference Include="rtl.dcp"/>
+        <DCCReference Include="..\Sources\CBiosInfo.pas"/>
+        <DCCReference Include="..\Sources\CWMIBase.pas"/>
+        <DCCReference Include="..\Sources\UConstantes.pas"/>
+        <DCCReference Include="..\Sources\UProcedures.pas"/>
+        <DCCReference Include="..\Sources\URegisterComps.pas"/>
+        <DCCReference Include="..\Sources\UTAboutProp.pas"/>
+        <DCCReference Include="..\Sources\UTypes.pas"/>
+        <DCCReference Include="..\Sources\CDiskDriveInfo.pas"/>
+        <DCCReference Include="..\Sources\CProcessorInfo.pas"/>
+        <DCCReference Include="..\Sources\CBatteryInfo.pas"/>
+        <DCCReference Include="..\Sources\CCDROMDriveInfo.pas"/>
+        <DCCReference Include="..\Sources\CKeyboardInfo.pas"/>
+        <DCCReference Include="..\Sources\COperatingSystemInfo.pas"/>
+        <DCCReference Include="..\Sources\CPhysicalMemoryInfo.pas"/>
+        <DCCReference Include="..\Sources\CPointingDeviceInfo.pas"/>
+        <DCCReference Include="..\Sources\CPrinterInfo.pas"/>
+        <DCCReference Include="..\Sources\CSoundDeviceInfo.pas"/>
+        <DCCReference Include="..\Sources\FormAbout.pas">
             <Form>FAbout</Form>
         </DCCReference>
-        <None Include="..\..\package\jedi.inc"/>
+        <DCCReference Include="..\Sources\CServiceInfo.pas"/>
+        <DCCReference Include="..\Sources\CDesktopMonitorInfo.pas"/>
+        <DCCReference Include="..\Sources\CComputerSystemInfo.pas"/>
+        <DCCReference Include="..\Sources\CStartupCommandInfo.pas"/>
+        <DCCReference Include="..\Sources\CNetworkAdapterInfo.pas"/>
+        <DCCReference Include="..\Sources\CShareInfo.pas"/>
+        <DCCReference Include="..\sources\CUserAccountInfo.pas"/>
+        <DCCReference Include="..\sources\CPrintJobInfo.pas"/>
+        <DCCReference Include="..\sources\CUSBControllerInfo.pas"/>
+        <DCCReference Include="..\sources\CDiskPartitionInfo.pas"/>
+        <DCCReference Include="..\sources\CEnvironmentInfo.pas"/>
+        <DCCReference Include="..\Sources\CWMISQL.pas"/>
+        <DCCReference Include="..\sources\CVideoControllerInfo.pas"/>
+        <DCCReference Include="..\sources\CPnPEntityInfo.pas"/>
+        <DCCReference Include="..\sources\CProductInfo.pas"/>
+        <DCCReference Include="..\sources\CFanInfo.pas"/>
+        <DCCReference Include="..\sources\CDisplayConfigurationInfo.pas"/>
+        <DCCReference Include="..\sources\CProcessInfo.pas"/>
+        <DCCReference Include="..\sources\WbemScripting_TLB.pas"/>
+        <None Include="ModelSupport_GLibWMID36\default.txaPackage"/>
+        <None Include="ModelSupport_GLibWMID36\default.txvpck"/>
+        <None Include="ModelSupport_GLibWMID36\CSoundDeviceInfo\default.txvpck"/>
+        <None Include="ModelSupport_GLibWMID36\CWMIBase\default.txvpck"/>
+        <None Include="ModelSupport_GLibWMID36\UTypes\default.txvpck"/>
+        <None Include="ModelSupport_GLibWMID36\CBIOSInfo\default.txvpck"/>
+        <None Include="ModelSupport_GLibWMID36\CPointingDeviceInfo\default.txvpck"/>
+        <None Include="ModelSupport_GLibWMID36\CComputerSystemInfo\default.txvpck"/>
+        <None Include="ModelSupport_GLibWMID36\FormAbout\default.txvpck"/>
+        <None Include="ModelSupport_GLibWMID36\CDisplayConfigurationInfo\default.txvpck"/>
+        <None Include="ModelSupport_GLibWMID36\CProcessInfo\default.txvpck"/>
+        <None Include="ModelSupport_GLibWMID36\URegisterComps\default.txvpck"/>
+        <None Include="ModelSupport_GLibWMID36\CDesktopMonitorInfo\default.txvpck"/>
+        <None Include="ModelSupport_GLibWMID36\CDiskPartitionInfo\default.txvpck"/>
+        <None Include="ModelSupport_GLibWMID36\CCDROMDriveInfo\default.txvpck"/>
+        <None Include="ModelSupport_GLibWMID36\CPhysicalMemoryInfo\default.txvpck"/>
+        <None Include="ModelSupport_GLibWMID36\COperatingSystemInfo\default.txvpck"/>
+        <None Include="ModelSupport_GLibWMID36\CKeyboardInfo\default.txvpck"/>
+        <None Include="ModelSupport_GLibWMID36\CProcessorInfo\default.txvpck"/>
+        <None Include="ModelSupport_GLibWMID36\CPnPEntityInfo\default.txvpck"/>
+        <None Include="ModelSupport_GLibWMID36\CFanInfo\default.txvpck"/>
+        <None Include="ModelSupport_GLibWMID36\CDiskDriveInfo\default.txvpck"/>
+        <None Include="ModelSupport_GLibWMID36\CBatteryInfo\default.txvpck"/>
+        <None Include="ModelSupport_GLibWMID36\CPrintJobInfo\default.txvpck"/>
+        <None Include="ModelSupport_GLibWMID36\CUserAccountInfo\default.txvpck"/>
+        <None Include="ModelSupport_GLibWMID36\CServiceInfo\default.txvpck"/>
+        <None Include="ModelSupport_GLibWMID36\CShareInfo\default.txvpck"/>
+        <None Include="ModelSupport_GLibWMID36\UProcedures\default.txvpck"/>
+        <None Include="ModelSupport_GLibWMID36\UTAboutProp\default.txvpck"/>
+        <None Include="ModelSupport_GLibWMID36\CEnvironmentInfo\default.txvpck"/>
+        <None Include="ModelSupport_GLibWMID36\CStartupCommandInfo\default.txvpck"/>
+        <None Include="ModelSupport_GLibWMID36\WbemScripting_TLB\default.txvpck"/>
+        <None Include="ModelSupport_GLibWMID36\CWMISQL\default.txvpck"/>
+        <None Include="ModelSupport_GLibWMID36\CNetworkAdapterInfo\default.txvpck"/>
+        <None Include="ModelSupport_GLibWMID36\CVideoControllerInfo\default.txvpck"/>
+        <None Include="ModelSupport_GLibWMID36\CUSBControllerInfo\default.txvpck"/>
+        <None Include="ModelSupport_GLibWMID36\CPrinterInfo\default.txvpck"/>
+        <None Include="ModelSupport_GLibWMID36\CProductInfo\default.txvpck"/>
+        <None Include="ModelSupport_GLibWMID36\UConstantes\default.txvpck"/>
+        <None Include="ModelSupport_GLibWMID36\COperatingSystemInfo\default.txaPackage"/>
+        <None Include="ModelSupport_GLibWMID36\CWMISQL\default.txaPackage"/>
+        <None Include="ModelSupport_GLibWMID36\CDesktopMonitorInfo\default.txaPackage"/>
+        <None Include="ModelSupport_GLibWMID36\UConstantes\default.txaPackage"/>
+        <None Include="ModelSupport_GLibWMID36\CSoundDeviceInfo\default.txaPackage"/>
+        <None Include="ModelSupport_GLibWMID36\CBatteryInfo\default.txaPackage"/>
+        <None Include="ModelSupport_GLibWMID36\CComputerSystemInfo\default.txaPackage"/>
+        <None Include="ModelSupport_GLibWMID36\UProcedures\default.txaPackage"/>
+        <None Include="ModelSupport_GLibWMID36\CEnvironmentInfo\default.txaPackage"/>
+        <None Include="ModelSupport_GLibWMID36\UTAboutProp\default.txaPackage"/>
+        <None Include="ModelSupport_GLibWMID36\CKeyboardInfo\default.txaPackage"/>
+        <None Include="ModelSupport_GLibWMID36\CPhysicalMemoryInfo\default.txaPackage"/>
+        <None Include="ModelSupport_GLibWMID36\CBIOSInfo\default.txaPackage"/>
+        <None Include="ModelSupport_GLibWMID36\CDiskDriveInfo\default.txaPackage"/>
+        <None Include="ModelSupport_GLibWMID36\CStartupCommandInfo\default.txaPackage"/>
+        <None Include="ModelSupport_GLibWMID36\CDiskPartitionInfo\default.txaPackage"/>
+        <None Include="ModelSupport_GLibWMID36\CPrintJobInfo\default.txaPackage"/>
+        <None Include="ModelSupport_GLibWMID36\CProcessInfo\default.txaPackage"/>
+        <None Include="ModelSupport_GLibWMID36\UTypes\default.txaPackage"/>
+        <None Include="ModelSupport_GLibWMID36\CPnPEntityInfo\default.txaPackage"/>
+        <None Include="ModelSupport_GLibWMID36\CPrinterInfo\default.txaPackage"/>
+        <None Include="ModelSupport_GLibWMID36\CDisplayConfigurationInfo\default.txaPackage"/>
+        <None Include="ModelSupport_GLibWMID36\WbemScripting_TLB\default.txaPackage"/>
+        <None Include="ModelSupport_GLibWMID36\CCDROMDriveInfo\default.txaPackage"/>
+        <None Include="ModelSupport_GLibWMID36\CShareInfo\default.txaPackage"/>
+        <None Include="ModelSupport_GLibWMID36\CWMIBase\default.txaPackage"/>
+        <None Include="ModelSupport_GLibWMID36\CPointingDeviceInfo\default.txaPackage"/>
+        <None Include="ModelSupport_GLibWMID36\FormAbout\default.txaPackage"/>
+        <None Include="ModelSupport_GLibWMID36\CNetworkAdapterInfo\default.txaPackage"/>
+        <None Include="ModelSupport_GLibWMID36\CUSBControllerInfo\default.txaPackage"/>
+        <None Include="ModelSupport_GLibWMID36\CVideoControllerInfo\default.txaPackage"/>
+        <None Include="ModelSupport_GLibWMID36\CServiceInfo\default.txaPackage"/>
+        <None Include="ModelSupport_GLibWMID36\CProcessorInfo\default.txaPackage"/>
+        <None Include="ModelSupport_GLibWMID36\CUserAccountInfo\default.txaPackage"/>
+        <None Include="ModelSupport_GLibWMID36\URegisterComps\default.txaPackage"/>
+        <None Include="ModelSupport_GLibWMID36\CFanInfo\default.txaPackage"/>
+        <None Include="ModelSupport_GLibWMID36\CProductInfo\default.txaPackage"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
@@ -125,32 +270,68 @@
             <CfgParent>Base</CfgParent>
         </BuildConfiguration>
     </ItemGroup>
+    <Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
     <ProjectExtensions>
         <Borland.Personality>Delphi.Personality.12</Borland.Personality>
-        <Borland.ProjectType/>
+        <Borland.ProjectType>Package</Borland.ProjectType>
         <BorlandProject>
             <Delphi.Personality>
                 <Source>
-                    <Source Name="MainSource">TestBiosInfo.dpr</Source>
+                    <Source Name="MainSource">GLibWMID36.dpk</Source>
                 </Source>
+                <Parameters>
+                    <Parameters Name="UseLauncher">False</Parameters>
+                    <Parameters Name="LoadAllSymbols">True</Parameters>
+                    <Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+                </Parameters>
+                <VersionInfo>
+                    <VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+                    <VersionInfo Name="AutoIncBuild">False</VersionInfo>
+                    <VersionInfo Name="MajorVer">1</VersionInfo>
+                    <VersionInfo Name="MinorVer">3</VersionInfo>
+                    <VersionInfo Name="Release">0</VersionInfo>
+                    <VersionInfo Name="Build">20</VersionInfo>
+                    <VersionInfo Name="Debug">True</VersionInfo>
+                    <VersionInfo Name="PreRelease">True</VersionInfo>
+                    <VersionInfo Name="Special">False</VersionInfo>
+                    <VersionInfo Name="Private">False</VersionInfo>
+                    <VersionInfo Name="DLL">False</VersionInfo>
+                    <VersionInfo Name="Locale">3082</VersionInfo>
+                    <VersionInfo Name="CodePage">1252</VersionInfo>
+                </VersionInfo>
+                <VersionInfoKeys>
+                    <VersionInfoKeys Name="CompanyName">Neftalí -Germán Estévez-</VersionInfoKeys>
+                    <VersionInfoKeys Name="FileDescription">GLib para Windows Management Instrumentation</VersionInfoKeys>
+                    <VersionInfoKeys Name="FileVersion">1.3.0.20</VersionInfoKeys>
+                    <VersionInfoKeys Name="InternalName">GLibWMI</VersionInfoKeys>
+                    <VersionInfoKeys Name="LegalCopyright">Neftalí -Germán Estévez-</VersionInfoKeys>
+                    <VersionInfoKeys Name="LegalTrademarks">Neftalí -Germán Estévez-</VersionInfoKeys>
+                    <VersionInfoKeys Name="OriginalFilename">GLib para Windows Management Instrumentation</VersionInfoKeys>
+                    <VersionInfoKeys Name="ProductName">GLib para Windows Management Instrumentation</VersionInfoKeys>
+                    <VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+                    <VersionInfoKeys Name="Comments"/>
+                </VersionInfoKeys>
                 <Excluded_Packages>
-                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k260.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
-                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp260.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k290.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp290.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
                 </Excluded_Packages>
             </Delphi.Personality>
             <Platforms>
                 <Platform value="Win32">True</Platform>
                 <Platform value="Win64">False</Platform>
+                <Platform value="Win64x">False</Platform>
             </Platforms>
             <Deployment Version="5">
-                <DeployFile LocalName="..\..\package\jedi.inc" Configuration="Debug" Class="ProjectFile"/>
-                <DeployFile LocalName="TestBiosInfo.exe" Configuration="Debug" Class="ProjectOutput"/>
-                <DeployClass Name="AdditionalDebugSymbols">
-                    <Platform Name="iOSSimulator">
-                        <Operation>1</Operation>
+                <DeployFile LocalName="..\DCUs\GLibWMI.bpl" Configuration="Release" Class="ProjectOutput"/>
+                <DeployFile LocalName="..\DCUs\GLibWMID36.bpl" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="Win32">
+                        <RemoteName>GLibWMID36.bpl</RemoteName>
+                        <Overwrite>true</Overwrite>
                     </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\DCUs\GLibWMID36.bpl" Configuration="Debug" Class="ProjectOutput"/>
+                <DeployClass Name="AdditionalDebugSymbols">
                     <Platform Name="OSX32">
-                        <RemoteDir>Contents\MacOS</RemoteDir>
                         <Operation>1</Operation>
                     </Platform>
                     <Platform Name="Win32">
@@ -564,7 +745,6 @@
                         <Operation>1</Operation>
                     </Platform>
                     <Platform Name="OSX32">
-                        <RemoteDir>Contents\MacOS</RemoteDir>
                         <Operation>1</Operation>
                     </Platform>
                     <Platform Name="Win32">
@@ -573,17 +753,14 @@
                 </DeployClass>
                 <DeployClass Name="DependencyFramework">
                     <Platform Name="OSX32">
-                        <RemoteDir>Contents\MacOS</RemoteDir>
                         <Operation>1</Operation>
                         <Extensions>.framework</Extensions>
                     </Platform>
                     <Platform Name="OSX64">
-                        <RemoteDir>Contents\MacOS</RemoteDir>
                         <Operation>1</Operation>
                         <Extensions>.framework</Extensions>
                     </Platform>
                     <Platform Name="OSXARM64">
-                        <RemoteDir>Contents\MacOS</RemoteDir>
                         <Operation>1</Operation>
                         <Extensions>.framework</Extensions>
                     </Platform>
@@ -592,30 +769,15 @@
                     </Platform>
                 </DeployClass>
                 <DeployClass Name="DependencyModule">
-                    <Platform Name="iOSDevice32">
-                        <Operation>1</Operation>
-                        <Extensions>.dylib</Extensions>
-                    </Platform>
-                    <Platform Name="iOSDevice64">
-                        <Operation>1</Operation>
-                        <Extensions>.dylib</Extensions>
-                    </Platform>
-                    <Platform Name="iOSSimARM64">
-                        <Operation>1</Operation>
-                        <Extensions>.dylib</Extensions>
-                    </Platform>
                     <Platform Name="OSX32">
-                        <RemoteDir>Contents\MacOS</RemoteDir>
                         <Operation>1</Operation>
                         <Extensions>.dylib</Extensions>
                     </Platform>
                     <Platform Name="OSX64">
-                        <RemoteDir>Contents\MacOS</RemoteDir>
                         <Operation>1</Operation>
                         <Extensions>.dylib</Extensions>
                     </Platform>
                     <Platform Name="OSXARM64">
-                        <RemoteDir>Contents\MacOS</RemoteDir>
                         <Operation>1</Operation>
                         <Extensions>.dylib</Extensions>
                     </Platform>
@@ -638,17 +800,14 @@
                         <Extensions>.dylib</Extensions>
                     </Platform>
                     <Platform Name="OSX32">
-                        <RemoteDir>Contents\MacOS</RemoteDir>
                         <Operation>1</Operation>
                         <Extensions>.dylib</Extensions>
                     </Platform>
                     <Platform Name="OSX64">
-                        <RemoteDir>Contents\MacOS</RemoteDir>
                         <Operation>1</Operation>
                         <Extensions>.dylib</Extensions>
                     </Platform>
                     <Platform Name="OSXARM64">
-                        <RemoteDir>Contents\MacOS</RemoteDir>
                         <Operation>1</Operation>
                         <Extensions>.dylib</Extensions>
                     </Platform>
@@ -674,15 +833,12 @@
                         <Operation>0</Operation>
                     </Platform>
                     <Platform Name="OSX32">
-                        <RemoteDir>Contents\Resources\StartUp\</RemoteDir>
                         <Operation>0</Operation>
                     </Platform>
                     <Platform Name="OSX64">
-                        <RemoteDir>Contents\Resources\StartUp\</RemoteDir>
                         <Operation>0</Operation>
                     </Platform>
                     <Platform Name="OSXARM64">
-                        <RemoteDir>Contents\Resources\StartUp\</RemoteDir>
                         <Operation>0</Operation>
                     </Platform>
                     <Platform Name="Win32">
@@ -697,44 +853,9 @@
                         <Operation>1</Operation>
                     </Platform>
                 </DeployClass>
-                <DeployClass Name="ProjectOSXDebug">
-                    <Platform Name="OSX64">
-                        <RemoteDir>..\$(PROJECTNAME).app.dSYM\Contents\Resources\DWARF</RemoteDir>
-                        <Operation>1</Operation>
-                    </Platform>
-                    <Platform Name="OSXARM64">
-                        <RemoteDir>..\$(PROJECTNAME).app.dSYM\Contents\Resources\DWARF</RemoteDir>
-                        <Operation>1</Operation>
-                    </Platform>
-                </DeployClass>
-                <DeployClass Name="ProjectOSXEntitlements">
-                    <Platform Name="OSX32">
-                        <RemoteDir>..\</RemoteDir>
-                        <Operation>1</Operation>
-                    </Platform>
-                    <Platform Name="OSX64">
-                        <RemoteDir>..\</RemoteDir>
-                        <Operation>1</Operation>
-                    </Platform>
-                    <Platform Name="OSXARM64">
-                        <RemoteDir>..\</RemoteDir>
-                        <Operation>1</Operation>
-                    </Platform>
-                </DeployClass>
-                <DeployClass Name="ProjectOSXInfoPList">
-                    <Platform Name="OSX32">
-                        <RemoteDir>Contents</RemoteDir>
-                        <Operation>1</Operation>
-                    </Platform>
-                    <Platform Name="OSX64">
-                        <RemoteDir>Contents</RemoteDir>
-                        <Operation>1</Operation>
-                    </Platform>
-                    <Platform Name="OSXARM64">
-                        <RemoteDir>Contents</RemoteDir>
-                        <Operation>1</Operation>
-                    </Platform>
-                </DeployClass>
+                <DeployClass Name="ProjectOSXDebug"/>
+                <DeployClass Name="ProjectOSXEntitlements"/>
+                <DeployClass Name="ProjectOSXInfoPList"/>
                 <DeployClass Name="ProjectOSXResource">
                     <Platform Name="OSX32">
                         <RemoteDir>Contents\Resources</RemoteDir>
@@ -771,15 +892,12 @@
                         <Operation>1</Operation>
                     </Platform>
                     <Platform Name="OSX32">
-                        <RemoteDir>Contents\MacOS</RemoteDir>
                         <Operation>1</Operation>
                     </Platform>
                     <Platform Name="OSX64">
-                        <RemoteDir>Contents\MacOS</RemoteDir>
                         <Operation>1</Operation>
                     </Platform>
                     <Platform Name="OSXARM64">
-                        <RemoteDir>Contents\MacOS</RemoteDir>
                         <Operation>1</Operation>
                     </Platform>
                     <Platform Name="Win32">
@@ -817,41 +935,9 @@
                         <Operation>1</Operation>
                     </Platform>
                 </DeployClass>
-                <DeployClass Name="ProjectiOSEntitlements">
-                    <Platform Name="iOSDevice32">
-                        <RemoteDir>..\</RemoteDir>
-                        <Operation>1</Operation>
-                    </Platform>
-                    <Platform Name="iOSDevice64">
-                        <RemoteDir>..\</RemoteDir>
-                        <Operation>1</Operation>
-                    </Platform>
-                    <Platform Name="iOSSimARM64">
-                        <RemoteDir>..\</RemoteDir>
-                        <Operation>1</Operation>
-                    </Platform>
-                </DeployClass>
-                <DeployClass Name="ProjectiOSInfoPList">
-                    <Platform Name="iOSDevice32">
-                        <Operation>1</Operation>
-                    </Platform>
-                    <Platform Name="iOSDevice64">
-                        <Operation>1</Operation>
-                    </Platform>
-                    <Platform Name="iOSSimARM64">
-                        <Operation>1</Operation>
-                    </Platform>
-                </DeployClass>
-                <DeployClass Name="ProjectiOSLaunchScreen">
-                    <Platform Name="iOSDevice64">
-                        <RemoteDir>..\$(PROJECTNAME).launchscreen</RemoteDir>
-                        <Operation>64</Operation>
-                    </Platform>
-                    <Platform Name="iOSSimARM64">
-                        <RemoteDir>..\$(PROJECTNAME).launchscreen</RemoteDir>
-                        <Operation>64</Operation>
-                    </Platform>
-                </DeployClass>
+                <DeployClass Name="ProjectiOSEntitlements"/>
+                <DeployClass Name="ProjectiOSInfoPList"/>
+                <DeployClass Name="ProjectiOSLaunchScreen"/>
                 <DeployClass Name="ProjectiOSResource">
                     <Platform Name="iOSDevice32">
                         <Operation>1</Operation>
@@ -1088,18 +1174,19 @@
                 <ProjectRoot Platform="iOSDevice32" Name="$(PROJECTNAME).app"/>
                 <ProjectRoot Platform="iOSDevice64" Name="$(PROJECTNAME).app"/>
                 <ProjectRoot Platform="iOSSimARM64" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="iOSSimulator" Name="$(PROJECTNAME).app"/>
                 <ProjectRoot Platform="Linux64" Name="$(PROJECTNAME)"/>
-                <ProjectRoot Platform="OSX32" Name="$(PROJECTNAME).app"/>
-                <ProjectRoot Platform="OSX64" Name="$(PROJECTNAME).app"/>
-                <ProjectRoot Platform="OSXARM64" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="OSX32" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="OSX64" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="OSXARM64" Name="$(PROJECTNAME)"/>
                 <ProjectRoot Platform="Win32" Name="$(PROJECTNAME)"/>
                 <ProjectRoot Platform="Win64" Name="$(PROJECTNAME)"/>
                 <ProjectRoot Platform="Win64x" Name="$(PROJECTNAME)"/>
             </Deployment>
+            <ModelSupport>True</ModelSupport>
         </BorlandProject>
         <ProjectFileVersion>12</ProjectFileVersion>
     </ProjectExtensions>
-    <Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
     <Import Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj" Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')"/>
     <Import Project="$(MSBuildProjectName).deployproj" Condition="Exists('$(MSBuildProjectName).deployproj')"/>
 </Project>

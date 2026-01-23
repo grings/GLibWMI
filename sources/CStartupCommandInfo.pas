@@ -1,5 +1,5 @@
 {
-TStartupCommandInfo Component Version 3.2 - Suite GLibWMI
+TStartupCommandInfo Component Version 3.3 - Suite GLibWMI
 Copyright (©) 2024,  by Germán Estévez (Neftalí)
 
 La clase Win32_StartupCommand representa un comando que se ejecuta automáticamente cuando un usuario 

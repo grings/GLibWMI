@@ -8,154 +8,152 @@
   resources were bound to the produced executable.
 */
 
-#define Vcl_OleConst_sNoRunningObject 65136
-#define Vcl_Imaging_JConsts_sChangeJPGSize 65137
-#define Vcl_Imaging_JConsts_sJPEGError 65138
-#define Vcl_Imaging_JConsts_sJPEGImageFile 65139
-#define Vcl_Consts_SStyleInvalidHandle 65152
-#define Vcl_Consts_SStyleFormatError 65153
-#define Vcl_Consts_SStyleHookClassRegistered 65154
-#define Vcl_Consts_SStyleHookClassNotRegistered 65155
-#define Vcl_Consts_SStyleInvalidParameter 65156
-#define Vcl_Consts_SStyleFeatureNotSupported 65157
-#define Vcl_Consts_SStyleNotRegistered 65158
-#define Vcl_Consts_SStyleUnregisterError 65159
-#define Vcl_Consts_SStyleNotRegisteredNoName 65160
-#define Vcl_Consts_sBeginInvokeNoHandle 65161
-#define System_Win_ComConst_SOleError 65162
-#define System_Win_ComConst_SNoMethod 65163
-#define System_Win_ComConst_SVarNotObject 65164
-#define System_Win_ComConst_STooManyParams 65165
-#define System_Win_ComConst_SDCOMNotInstalled 65166
-#define Vcl_ComStrs_sInvalidOwner 65167
-#define Vcl_Consts_SUsername 65168
-#define Vcl_Consts_SPassword 65169
-#define Vcl_Consts_SDomain 65170
-#define Vcl_Consts_SLogin 65171
-#define Vcl_Consts_SNoGetItemEventHandler 65172
-#define Vcl_Consts_STrayIconRemoveError 65173
-#define Vcl_Consts_SWindowsVistaRequired 65174
-#define Vcl_Consts_STaskDlgButtonCaption 65175
-#define Vcl_Consts_STaskDlgRadioButtonCaption 65176
-#define Vcl_Consts_SInvalidTaskDlgButtonCaption 65177
-#define Vcl_Consts_SStyleLoadError 65178
-#define Vcl_Consts_SStyleLoadErrors 65179
-#define Vcl_Consts_SStyleRegisterError 65180
-#define Vcl_Consts_SStyleClassRegisterError 65181
-#define Vcl_Consts_SStyleNotFound 65182
-#define Vcl_Consts_SStyleClassNotFound 65183
-#define Vcl_Consts_SmkcAlt 65184
-#define Vcl_Consts_SOutOfRange 65185
-#define Vcl_Consts_sAllFilter 65186
-#define Vcl_Consts_SInvalidClipFmt 65187
-#define Vcl_Consts_SIconToClipboard 65188
-#define Vcl_Consts_SCannotOpenClipboard 65189
-#define Vcl_Consts_SInvalidPrinterOp 65190
-#define Vcl_Consts_SNoDefaultPrinter 65191
-#define Vcl_Consts_SDuplicateMenus 65192
-#define Vcl_Consts_SDockedCtlNeedsName 65193
-#define Vcl_Consts_SDockTreeRemoveError 65194
-#define Vcl_Consts_SDockZoneNotFound 65195
-#define Vcl_Consts_SDockZoneHasNoCtl 65196
-#define Vcl_Consts_SDockZoneVersionConflict 65197
-#define Vcl_Consts_SPromptArrayTooShort 65198
-#define Vcl_Consts_SPromptArrayEmpty 65199
-#define Vcl_Consts_SmkcTab 65200
-#define Vcl_Consts_SmkcEsc 65201
-#define Vcl_Consts_SmkcEnter 65202
-#define Vcl_Consts_SmkcSpace 65203
-#define Vcl_Consts_SmkcPgUp 65204
-#define Vcl_Consts_SmkcPgDn 65205
-#define Vcl_Consts_SmkcEnd 65206
-#define Vcl_Consts_SmkcHome 65207
-#define Vcl_Consts_SmkcLeft 65208
-#define Vcl_Consts_SmkcUp 65209
-#define Vcl_Consts_SmkcRight 65210
-#define Vcl_Consts_SmkcDown 65211
-#define Vcl_Consts_SmkcIns 65212
-#define Vcl_Consts_SmkcDel 65213
-#define Vcl_Consts_SmkcShift 65214
-#define Vcl_Consts_SmkcCtrl 65215
-#define Vcl_Consts_SMsgDlgError 65216
-#define Vcl_Consts_SMsgDlgInformation 65217
-#define Vcl_Consts_SMsgDlgConfirm 65218
-#define Vcl_Consts_SMsgDlgYes 65219
-#define Vcl_Consts_SMsgDlgNo 65220
-#define Vcl_Consts_SMsgDlgOK 65221
-#define Vcl_Consts_SMsgDlgCancel 65222
-#define Vcl_Consts_SMsgDlgHelp 65223
-#define Vcl_Consts_SMsgDlgAbort 65224
-#define Vcl_Consts_SMsgDlgRetry 65225
-#define Vcl_Consts_SMsgDlgIgnore 65226
-#define Vcl_Consts_SMsgDlgAll 65227
-#define Vcl_Consts_SMsgDlgNoToAll 65228
-#define Vcl_Consts_SMsgDlgYesToAll 65229
-#define Vcl_Consts_SMsgDlgClose 65230
-#define Vcl_Consts_SmkcBkSp 65231
-#define Vcl_Consts_SControlNonMainThreadUsage 65232
-#define Vcl_Consts_SCannotDragForm 65233
-#define Vcl_Consts_SVMetafiles 65234
-#define Vcl_Consts_SVEnhMetafiles 65235
-#define Vcl_Consts_SVIcons 65236
-#define Vcl_Consts_SVBitmaps 65237
-#define Vcl_Consts_SVTIFFImages 65238
-#define Vcl_Consts_SGridTooLarge 65239
-#define Vcl_Consts_STooManyDeleted 65240
-#define Vcl_Consts_SIndexOutOfRange 65241
-#define Vcl_Consts_SFixedColTooBig 65242
-#define Vcl_Consts_SFixedRowTooBig 65243
-#define Vcl_Consts_SInvalidStringGridOp 65244
-#define Vcl_Consts_SMaskErr 65245
-#define Vcl_Consts_SMaskEditErr 65246
-#define Vcl_Consts_SMsgDlgWarning 65247
-#define Vcl_Consts_SCannotShowModal 65248
-#define Vcl_Consts_SScrollBarRange 65249
-#define Vcl_Consts_SPropertyOutOfRange 65250
-#define Vcl_Consts_SMenuIndexError 65251
-#define Vcl_Consts_SMenuReinserted 65252
-#define Vcl_Consts_SMenuNotFound 65253
-#define Vcl_Consts_SNoTimers 65254
-#define Vcl_Consts_SNotPrinting 65255
-#define Vcl_Consts_SPrinting 65256
-#define Vcl_Consts_SPrinterIndexError 65257
-#define Vcl_Consts_SInvalidPrinter 65258
-#define Vcl_Consts_SDeviceOnPort 65259
-#define Vcl_Consts_SGroupIndexTooLow 65260
-#define Vcl_Consts_SNoMDIForm 65261
-#define Vcl_Consts_SImageCanvasNeedsBitmap 65262
-#define Vcl_Consts_SControlParentSetToSelf 65263
-#define Vcl_Consts_SInvalidFrameIndex 65264
-#define Vcl_Consts_SInvalidImageSize 65265
-#define Vcl_Consts_SInvalidImageList 65266
-#define Vcl_Consts_SReplaceImage 65267
-#define Vcl_Consts_SInsertImage 65268
-#define Vcl_Consts_SImageIndexError 65269
-#define Vcl_Consts_SImageReadFail 65270
-#define Vcl_Consts_SImageWriteFail 65271
-#define Vcl_Consts_SWindowDCError 65272
-#define Vcl_Consts_SWindowClass 65273
-#define Vcl_Consts_SCannotFocus 65274
-#define Vcl_Consts_SParentRequired 65275
-#define Vcl_Consts_SControlPath 65276
-#define Vcl_Consts_SParentGivenNotAParent 65277
-#define Vcl_Consts_SMDIChildNotVisible 65278
-#define Vcl_Consts_SVisibleChanged 65279
-#define System_RTLConsts_sMustWaitOnOneEvent 65280
-#define System_RTLConsts_sBeginInvokeDestroying 65281
-#define Vcl_Consts_SInvalidBitmap 65282
-#define Vcl_Consts_SInvalidIcon 65283
-#define Vcl_Consts_SInvalidMetafile 65284
-#define Vcl_Consts_SInvalidPixelFormat 65285
-#define Vcl_Consts_SInvalidImage 65286
-#define Vcl_Consts_SScanLine 65287
-#define Vcl_Consts_SChangeIconSize 65288
-#define Vcl_Consts_SChangeWicSize 65289
-#define Vcl_Consts_SUnknownExtension 65290
-#define Vcl_Consts_SUnknownClipboardFormat 65291
-#define Vcl_Consts_SUnknownStreamFormat 65292
-#define Vcl_Consts_SOutOfResources 65293
-#define Vcl_Consts_SNoCanvasHandle 65294
-#define Vcl_Consts_SInvalidTextFormatFlag 65295
+#define Vcl_Imaging_JConsts_sJPEGError 65136
+#define Vcl_Imaging_JConsts_sJPEGImageFile 65137
+#define Vcl_Consts_SStyleHookClassNotRegistered 65152
+#define Vcl_Consts_SStyleInvalidParameter 65153
+#define Vcl_Consts_SStyleFeatureNotSupported 65154
+#define Vcl_Consts_SStyleNotRegistered 65155
+#define Vcl_Consts_SStyleUnregisterError 65156
+#define Vcl_Consts_SStyleNotRegisteredNoName 65157
+#define Vcl_Consts_sBeginInvokeNoHandle 65158
+#define System_Win_ComConst_SOleError 65159
+#define System_Win_ComConst_SNoMethod 65160
+#define System_Win_ComConst_SVarNotObject 65161
+#define System_Win_ComConst_STooManyParams 65162
+#define System_Win_ComConst_SDCOMNotInstalled 65163
+#define Vcl_ComStrs_sInvalidOwner 65164
+#define Vcl_ComStrs_sListViewCannotAddItem 65165
+#define Vcl_OleConst_sNoRunningObject 65166
+#define Vcl_Imaging_JConsts_sChangeJPGSize 65167
+#define Vcl_Consts_SLogin 65168
+#define Vcl_Consts_SNoGetItemEventHandler 65169
+#define Vcl_Consts_STrayIconRemoveError 65170
+#define Vcl_Consts_SWindowsVistaRequired 65171
+#define Vcl_Consts_STaskDlgButtonCaption 65172
+#define Vcl_Consts_STaskDlgRadioButtonCaption 65173
+#define Vcl_Consts_SInvalidTaskDlgButtonCaption 65174
+#define Vcl_Consts_SStyleLoadError 65175
+#define Vcl_Consts_SStyleLoadErrors 65176
+#define Vcl_Consts_SStyleRegisterError 65177
+#define Vcl_Consts_SStyleClassRegisterError 65178
+#define Vcl_Consts_SStyleNotFound 65179
+#define Vcl_Consts_SStyleClassNotFound 65180
+#define Vcl_Consts_SStyleInvalidHandle 65181
+#define Vcl_Consts_SStyleFormatError 65182
+#define Vcl_Consts_SStyleHookClassRegistered 65183
+#define Vcl_Consts_SInvalidClipFmt 65184
+#define Vcl_Consts_SIconToClipboard 65185
+#define Vcl_Consts_SCannotOpenClipboard 65186
+#define Vcl_Consts_SInvalidPrinterOp 65187
+#define Vcl_Consts_SNoDefaultPrinter 65188
+#define Vcl_Consts_SDuplicateMenus 65189
+#define Vcl_Consts_SDockedCtlNeedsName 65190
+#define Vcl_Consts_SDockTreeRemoveError 65191
+#define Vcl_Consts_SDockZoneNotFound 65192
+#define Vcl_Consts_SDockZoneHasNoCtl 65193
+#define Vcl_Consts_SDockZoneVersionConflict 65194
+#define Vcl_Consts_SPromptArrayTooShort 65195
+#define Vcl_Consts_SPromptArrayEmpty 65196
+#define Vcl_Consts_SUsername 65197
+#define Vcl_Consts_SPassword 65198
+#define Vcl_Consts_SDomain 65199
+#define Vcl_Consts_SmkcSpace 65200
+#define Vcl_Consts_SmkcPgUp 65201
+#define Vcl_Consts_SmkcPgDn 65202
+#define Vcl_Consts_SmkcEnd 65203
+#define Vcl_Consts_SmkcHome 65204
+#define Vcl_Consts_SmkcLeft 65205
+#define Vcl_Consts_SmkcUp 65206
+#define Vcl_Consts_SmkcRight 65207
+#define Vcl_Consts_SmkcDown 65208
+#define Vcl_Consts_SmkcIns 65209
+#define Vcl_Consts_SmkcDel 65210
+#define Vcl_Consts_SmkcShift 65211
+#define Vcl_Consts_SmkcCtrl 65212
+#define Vcl_Consts_SmkcAlt 65213
+#define Vcl_Consts_SOutOfRange 65214
+#define Vcl_Consts_sAllFilter 65215
+#define Vcl_Consts_SMsgDlgYes 65216
+#define Vcl_Consts_SMsgDlgNo 65217
+#define Vcl_Consts_SMsgDlgOK 65218
+#define Vcl_Consts_SMsgDlgCancel 65219
+#define Vcl_Consts_SMsgDlgHelp 65220
+#define Vcl_Consts_SMsgDlgAbort 65221
+#define Vcl_Consts_SMsgDlgRetry 65222
+#define Vcl_Consts_SMsgDlgIgnore 65223
+#define Vcl_Consts_SMsgDlgAll 65224
+#define Vcl_Consts_SMsgDlgNoToAll 65225
+#define Vcl_Consts_SMsgDlgYesToAll 65226
+#define Vcl_Consts_SMsgDlgClose 65227
+#define Vcl_Consts_SmkcBkSp 65228
+#define Vcl_Consts_SmkcTab 65229
+#define Vcl_Consts_SmkcEsc 65230
+#define Vcl_Consts_SmkcEnter 65231
+#define Vcl_Consts_SVEnhMetafiles 65232
+#define Vcl_Consts_SVIcons 65233
+#define Vcl_Consts_SVBitmaps 65234
+#define Vcl_Consts_SVTIFFImages 65235
+#define Vcl_Consts_SGridTooLarge 65236
+#define Vcl_Consts_STooManyDeleted 65237
+#define Vcl_Consts_SIndexOutOfRange 65238
+#define Vcl_Consts_SFixedColTooBig 65239
+#define Vcl_Consts_SFixedRowTooBig 65240
+#define Vcl_Consts_SInvalidStringGridOp 65241
+#define Vcl_Consts_SMaskErr 65242
+#define Vcl_Consts_SMaskEditErr 65243
+#define Vcl_Consts_SMsgDlgWarning 65244
+#define Vcl_Consts_SMsgDlgError 65245
+#define Vcl_Consts_SMsgDlgInformation 65246
+#define Vcl_Consts_SMsgDlgConfirm 65247
+#define Vcl_Consts_SMenuIndexError 65248
+#define Vcl_Consts_SMenuReinserted 65249
+#define Vcl_Consts_SMenuNotFound 65250
+#define Vcl_Consts_SNoTimers 65251
+#define Vcl_Consts_SNotPrinting 65252
+#define Vcl_Consts_SPrinting 65253
+#define Vcl_Consts_SPrinterIndexError 65254
+#define Vcl_Consts_SInvalidPrinter 65255
+#define Vcl_Consts_SDeviceOnPort 65256
+#define Vcl_Consts_SGroupIndexTooLow 65257
+#define Vcl_Consts_SNoMDIForm 65258
+#define Vcl_Consts_SImageCanvasNeedsBitmap 65259
+#define Vcl_Consts_SControlParentSetToSelf 65260
+#define Vcl_Consts_SControlNonMainThreadUsage 65261
+#define Vcl_Consts_SCannotDragForm 65262
+#define Vcl_Consts_SVMetafiles 65263
+#define Vcl_Consts_SReplaceImage 65264
+#define Vcl_Consts_SInsertImage 65265
+#define Vcl_Consts_SImageIndexError 65266
+#define Vcl_Consts_SImageReadFail 65267
+#define Vcl_Consts_SImageWriteFail 65268
+#define Vcl_Consts_SWindowDCError 65269
+#define Vcl_Consts_SWindowClass 65270
+#define Vcl_Consts_SCannotFocus 65271
+#define Vcl_Consts_SParentRequired 65272
+#define Vcl_Consts_SControlPath 65273
+#define Vcl_Consts_SParentGivenNotAParent 65274
+#define Vcl_Consts_SMDIChildNotVisible 65275
+#define Vcl_Consts_SVisibleChanged 65276
+#define Vcl_Consts_SCannotShowModal 65277
+#define Vcl_Consts_SScrollBarRange 65278
+#define Vcl_Consts_SPropertyOutOfRange 65279
+#define Vcl_Consts_SInvalidIcon 65280
+#define Vcl_Consts_SInvalidMetafile 65281
+#define Vcl_Consts_SInvalidPixelFormat 65282
+#define Vcl_Consts_SInvalidImage 65283
+#define Vcl_Consts_SScanLine 65284
+#define Vcl_Consts_SChangeIconSize 65285
+#define Vcl_Consts_SChangeWicSize 65286
+#define Vcl_Consts_SUnknownExtension 65287
+#define Vcl_Consts_SUnknownClipboardFormat 65288
+#define Vcl_Consts_SUnknownStreamFormat 65289
+#define Vcl_Consts_SOutOfResources 65290
+#define Vcl_Consts_SNoCanvasHandle 65291
+#define Vcl_Consts_SInvalidTextFormatFlag 65292
+#define Vcl_Consts_SInvalidFrameIndex 65293
+#define Vcl_Consts_SInvalidImageSize 65294
+#define Vcl_Consts_SInvalidImageList 65295
 #define System_RTLConsts_SWindowsServer2019 65296
 #define System_RTLConsts_SWindowsServer2022 65297
 #define System_RTLConsts_SWindows8 65298
@@ -169,9 +167,9 @@
 #define System_RTLConsts_sObserverNoSinglecastFound 65306
 #define System_RTLConsts_sObserverNoMulticastFound 65307
 #define System_RTLConsts_sObserverNotAvailable 65308
-#define System_RTLConsts_SInvalidDateString 65309
-#define System_RTLConsts_SInvalidTimeString 65310
-#define System_RTLConsts_SInvalidOffsetString 65311
+#define System_RTLConsts_sMustWaitOnOneEvent 65309
+#define System_RTLConsts_sBeginInvokeDestroying 65310
+#define Vcl_Consts_SInvalidBitmap 65311
 #define System_RTLConsts_SVersionStr 65312
 #define System_RTLConsts_SSPVersionStr 65313
 #define System_RTLConsts_SVersion32 65314
@@ -398,13 +396,8 @@
 #define System_SysConst_SAccessDenied 65535
 STRINGTABLE
 BEGIN
-	Vcl_OleConst_sNoRunningObject,	L"Unable to retrieve a pointer to a running object registered with OLE for %s/%s"
-	Vcl_Imaging_JConsts_sChangeJPGSize,	L"Cannot change the size of a JPEG image"
 	Vcl_Imaging_JConsts_sJPEGError,	L"JPEG error #%d"
 	Vcl_Imaging_JConsts_sJPEGImageFile,	L"JPEG Image File"
-	Vcl_Consts_SStyleInvalidHandle,	L"Invalid style handle"
-	Vcl_Consts_SStyleFormatError,	L"Invalid style format"
-	Vcl_Consts_SStyleHookClassRegistered,	L"Class '%s' is already registered for '%s'"
 	Vcl_Consts_SStyleHookClassNotRegistered,	L"Class '%s' is not registered for '%s'"
 	Vcl_Consts_SStyleInvalidParameter,	L"%s parameter cannot be nil"
 	Vcl_Consts_SStyleFeatureNotSupported,	L"Feature not supported by this style"
@@ -418,9 +411,9 @@ BEGIN
 	System_Win_ComConst_STooManyParams,	L"Dispatch methods do not support more than 64 parameters"
 	System_Win_ComConst_SDCOMNotInstalled,	L"DCOM not installed"
 	Vcl_ComStrs_sInvalidOwner,	L"Invalid owner"
-	Vcl_Consts_SUsername,	L"&Username"
-	Vcl_Consts_SPassword,	L"&Password"
-	Vcl_Consts_SDomain,	L"&Domain"
+	Vcl_ComStrs_sListViewCannotAddItem,	L"ListView item can be added only when OwnerData is False.  Use OnData instead."
+	Vcl_OleConst_sNoRunningObject,	L"Unable to retrieve a pointer to a running object registered with OLE for %s/%s"
+	Vcl_Imaging_JConsts_sChangeJPGSize,	L"Cannot change the size of a JPEG image"
 	Vcl_Consts_SLogin,	L"Login"
 	Vcl_Consts_SNoGetItemEventHandler,	L"No OnGetItem event handler assigned"
 	Vcl_Consts_STrayIconRemoveError,	L"Cannot remove shell notification icon"
@@ -434,9 +427,9 @@ BEGIN
 	Vcl_Consts_SStyleClassRegisterError,	L"Style class '%s' already registered"
 	Vcl_Consts_SStyleNotFound,	L"Style '%s' not found"
 	Vcl_Consts_SStyleClassNotFound,	L"Style class '%s' not found"
-	Vcl_Consts_SmkcAlt,	L"Alt+"
-	Vcl_Consts_SOutOfRange,	L"Value must be between %d and %d"
-	Vcl_Consts_sAllFilter,	L"All"
+	Vcl_Consts_SStyleInvalidHandle,	L"Invalid style handle"
+	Vcl_Consts_SStyleFormatError,	L"Invalid style format"
+	Vcl_Consts_SStyleHookClassRegistered,	L"Class '%s' is already registered for '%s'"
 	Vcl_Consts_SInvalidClipFmt,	L"Invalid clipboard format"
 	Vcl_Consts_SIconToClipboard,	L"Clipboard does not support Icons"
 	Vcl_Consts_SCannotOpenClipboard,	L"Cannot open clipboard: %s"
@@ -450,9 +443,9 @@ BEGIN
 	Vcl_Consts_SDockZoneVersionConflict,	L"Error loading dock zone from the stream. Expecting version %d, but found %d."
 	Vcl_Consts_SPromptArrayTooShort,	L"Length of value array must be >= length of prompt array"
 	Vcl_Consts_SPromptArrayEmpty,	L"Prompt array must not be empty"
-	Vcl_Consts_SmkcTab,	L"Tab"
-	Vcl_Consts_SmkcEsc,	L"Esc"
-	Vcl_Consts_SmkcEnter,	L"Enter"
+	Vcl_Consts_SUsername,	L"&Username"
+	Vcl_Consts_SPassword,	L"&Password"
+	Vcl_Consts_SDomain,	L"&Domain"
 	Vcl_Consts_SmkcSpace,	L"Space"
 	Vcl_Consts_SmkcPgUp,	L"PgUp"
 	Vcl_Consts_SmkcPgDn,	L"PgDn"
@@ -466,9 +459,9 @@ BEGIN
 	Vcl_Consts_SmkcDel,	L"Del"
 	Vcl_Consts_SmkcShift,	L"Shift+"
 	Vcl_Consts_SmkcCtrl,	L"Ctrl+"
-	Vcl_Consts_SMsgDlgError,	L"Error"
-	Vcl_Consts_SMsgDlgInformation,	L"Information"
-	Vcl_Consts_SMsgDlgConfirm,	L"Confirm"
+	Vcl_Consts_SmkcAlt,	L"Alt+"
+	Vcl_Consts_SOutOfRange,	L"Value must be between %d and %d"
+	Vcl_Consts_sAllFilter,	L"All"
 	Vcl_Consts_SMsgDlgYes,	L"&Yes"
 	Vcl_Consts_SMsgDlgNo,	L"&No"
 	Vcl_Consts_SMsgDlgOK,	L"OK"
@@ -482,9 +475,9 @@ BEGIN
 	Vcl_Consts_SMsgDlgYesToAll,	L"Yes to &All"
 	Vcl_Consts_SMsgDlgClose,	L"&Close"
 	Vcl_Consts_SmkcBkSp,	L"BkSp"
-	Vcl_Consts_SControlNonMainThreadUsage,	L"Control '%s' is used on a not main thread"
-	Vcl_Consts_SCannotDragForm,	L"Cannot drag a form"
-	Vcl_Consts_SVMetafiles,	L"Metafiles"
+	Vcl_Consts_SmkcTab,	L"Tab"
+	Vcl_Consts_SmkcEsc,	L"Esc"
+	Vcl_Consts_SmkcEnter,	L"Enter"
 	Vcl_Consts_SVEnhMetafiles,	L"Enhanced Metafiles"
 	Vcl_Consts_SVIcons,	L"Icons"
 	Vcl_Consts_SVBitmaps,	L"Bitmaps"
@@ -498,9 +491,9 @@ BEGIN
 	Vcl_Consts_SMaskErr,	L"Invalid input value"
 	Vcl_Consts_SMaskEditErr,	L"Invalid input value.  Use escape key to abandon changes"
 	Vcl_Consts_SMsgDlgWarning,	L"Warning"
-	Vcl_Consts_SCannotShowModal,	L"Cannot make a visible window modal"
-	Vcl_Consts_SScrollBarRange,	L"Scrollbar property out of range"
-	Vcl_Consts_SPropertyOutOfRange,	L"%s property out of range"
+	Vcl_Consts_SMsgDlgError,	L"Error"
+	Vcl_Consts_SMsgDlgInformation,	L"Information"
+	Vcl_Consts_SMsgDlgConfirm,	L"Confirm"
 	Vcl_Consts_SMenuIndexError,	L"Menu index out of range"
 	Vcl_Consts_SMenuReinserted,	L"Menu inserted twice"
 	Vcl_Consts_SMenuNotFound,	L"Sub-menu is not in menu"
@@ -514,9 +507,9 @@ BEGIN
 	Vcl_Consts_SNoMDIForm,	L"Cannot create form. No MDI forms are currently active"
 	Vcl_Consts_SImageCanvasNeedsBitmap,	L"Can only modify an image if it contains a bitmap"
 	Vcl_Consts_SControlParentSetToSelf,	L"A control cannot have itself as its parent"
-	Vcl_Consts_SInvalidFrameIndex,	L"Invalid image frame index %d: there are %d frames (0-%d)"
-	Vcl_Consts_SInvalidImageSize,	L"Invalid image size"
-	Vcl_Consts_SInvalidImageList,	L"Invalid ImageList"
+	Vcl_Consts_SControlNonMainThreadUsage,	L"Control '%s' is used on a not main thread"
+	Vcl_Consts_SCannotDragForm,	L"Cannot drag a form"
+	Vcl_Consts_SVMetafiles,	L"Metafiles"
 	Vcl_Consts_SReplaceImage,	L"Unable to Replace Image"
 	Vcl_Consts_SInsertImage,	L"Unable to Insert Image"
 	Vcl_Consts_SImageIndexError,	L"Invalid ImageList Index"
@@ -530,9 +523,9 @@ BEGIN
 	Vcl_Consts_SParentGivenNotAParent,	L"Parent given is not a parent of '%s'"
 	Vcl_Consts_SMDIChildNotVisible,	L"Cannot hide an MDI Child Form"
 	Vcl_Consts_SVisibleChanged,	L"Cannot change Visible in OnShow or OnHide"
-	System_RTLConsts_sMustWaitOnOneEvent,	L"Must wait on at least one event"
-	System_RTLConsts_sBeginInvokeDestroying,	L"Cannot call BeginInvoke on a TComponent in the process of destruction"
-	Vcl_Consts_SInvalidBitmap,	L"Bitmap image is not valid"
+	Vcl_Consts_SCannotShowModal,	L"Cannot make a visible window modal"
+	Vcl_Consts_SScrollBarRange,	L"Scrollbar property out of range"
+	Vcl_Consts_SPropertyOutOfRange,	L"%s property out of range"
 	Vcl_Consts_SInvalidIcon,	L"Icon image is not valid"
 	Vcl_Consts_SInvalidMetafile,	L"Metafile is not valid"
 	Vcl_Consts_SInvalidPixelFormat,	L"Invalid pixel format"
@@ -546,6 +539,9 @@ BEGIN
 	Vcl_Consts_SOutOfResources,	L"Out of system resources"
 	Vcl_Consts_SNoCanvasHandle,	L"Canvas does not allow drawing"
 	Vcl_Consts_SInvalidTextFormatFlag,	L"Text format flag '%s' not supported"
+	Vcl_Consts_SInvalidFrameIndex,	L"Invalid image frame index %d: there are %d frames (0-%d)"
+	Vcl_Consts_SInvalidImageSize,	L"Invalid image size"
+	Vcl_Consts_SInvalidImageList,	L"Invalid ImageList"
 	System_RTLConsts_SWindowsServer2019,	L"Windows Server 2019"
 	System_RTLConsts_SWindowsServer2022,	L"Windows Server 2022"
 	System_RTLConsts_SWindows8,	L"Windows 8"
@@ -559,9 +555,9 @@ BEGIN
 	System_RTLConsts_sObserverNoSinglecastFound,	L"No single cast observer with ID %d was added to the observer collection"
 	System_RTLConsts_sObserverNoMulticastFound,	L"No multi cast observer with ID %d was added to the observer collection"
 	System_RTLConsts_sObserverNotAvailable,	L"Observer is not available"
-	System_RTLConsts_SInvalidDateString,	L"Invalid date string: %s"
-	System_RTLConsts_SInvalidTimeString,	L"Invalid time string: %s"
-	System_RTLConsts_SInvalidOffsetString,	L"Invalid time Offset string: %s"
+	System_RTLConsts_sMustWaitOnOneEvent,	L"Must wait on at least one event"
+	System_RTLConsts_sBeginInvokeDestroying,	L"Cannot call BeginInvoke on a TComponent in the process of destruction"
+	Vcl_Consts_SInvalidBitmap,	L"Bitmap image is not valid"
 	System_RTLConsts_SVersionStr,	L"%s (Version %d.%d, Build %d, %5:s)"
 	System_RTLConsts_SSPVersionStr,	L"%s Service Pack %4:d (Version %1:d.%2:d, Build %3:d, %5:s)"
 	System_RTLConsts_SVersion32,	L"32-bit Edition"
@@ -712,7 +708,7 @@ BEGIN
 	System_SysConst_SObjectDisposed,	L"Method called on disposed object"
 	System_SysConst_SAssertError,	L"%s (%s, line %d)"
 	System_SysConst_SAbstractError,	L"Abstract Error"
-	System_SysConst_SModuleAccessViolation,	L"Access violation at address %p in module '%s'. %s of address %p"
+	System_SysConst_SModuleAccessViolation,	L"Access violation at address %p in module '%s' (offset %x). %s of address %p"
 	System_SysConst_SOSError,	L"System Error.  Code: %d.\r\n%s%s"
 	System_SysConst_SUnkOSError,	L"A call to an OS function failed"
 	System_SysConst_SShortMonthNameJan,	L"Jan"

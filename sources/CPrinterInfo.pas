@@ -1,5 +1,5 @@
 {
-TPrinterInfo Component Version 3.2 - Suite GLibWMI
+TPrinterInfo Component Version 3.3 - Suite GLibWMI
 Copyright (©) 2024,  by Germán Estévez (Neftalí)
 
 

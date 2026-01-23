@@ -1,5 +1,5 @@
 {
-TBootConfigurationInfo Component Version 3.2 - Suite GLibWMI
+TBootConfigurationInfo Component Version 3.3 - Suite GLibWMI
 Copyright (©) 2024,  by Germán Estévez (Neftalí)
 
 La clase Win32_BootConfiguration representa la configuración de arranque de un sistema Win32.
